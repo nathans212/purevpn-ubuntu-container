@@ -10,7 +10,7 @@
 FROM ubuntu:18.04
 MAINTAINER Alexey Baikov <sysboss[@]mail.ru>
 
-RUN apt-get update \
+RUN apt-get update \ && && apt-get install curl -y
  && apt-get install -y wget iproute2 net-tools iputils-ping expect curl \
  && apt-get install -y --no-install-recommends expect
 
